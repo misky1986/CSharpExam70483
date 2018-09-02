@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using Chapter1.Challenge1;
+using Chapter1.Challenge2;
 
 namespace Chapter1
 {
@@ -6,7 +9,11 @@ namespace Chapter1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
-    }
+            // Comment in to run Code Challenge1
+            //new Calculator().CalculatorProgram();
+
+            // Comment in to run Code Challenge2
+            new StudentReportCard().StudentReportCard1();            
+        }                        
+    }    
 }
