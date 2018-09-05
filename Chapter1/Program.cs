@@ -13,7 +13,7 @@ namespace Chapter1
             //new Calculator().CalculatorProgram();
 
             // Comment in to run Code Challenge2
-            new StudentReportCard().StudentReportCard1();            
+            new StudentReportCard().StudentReportCardProgram();            
         }                        
     }    
 }

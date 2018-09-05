@@ -6,7 +6,7 @@ namespace Chapter1.Challenge2
 {
     class StudentReportCard
     {
-        public void StudentReportCard()
+        public void StudentReportCardProgram()
         {
             Console.WriteLine("Press any following key\n");
 
