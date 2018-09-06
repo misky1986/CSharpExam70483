@@ -349,3 +349,10 @@ Fahrenheit fahr = new Fahrenheit(100.0f);
 Console.Write($"{fahr.Degrees} Fahrenheit");
 Celsius c = (Celsius)fahr;
 ```
+
+## Exam Questions
+1) C
+2) B
+3) B
+4) C
+5) B
