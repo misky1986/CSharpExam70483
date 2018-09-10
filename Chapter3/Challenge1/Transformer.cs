@@ -8,7 +8,7 @@ namespace Chapter3.Challenge1
     {
         public void Run()
         {
-            string ability = ChoseVehicleAbility();
+            string ability = ChooseVehicleAbility();
             Ability vehicleAbility = ConvertStringToEnumValue(ability);
             Vehicle vehicle = null;
             while (vehicleAbility != Ability.None)
@@ -16,17 +16,17 @@ namespace Chapter3.Challenge1
                 switch (vehicleAbility)
                 {
                     case Ability.Air:
-                        Console.Write("Air Vehicle chosen.\n");
+                        Console.Write("Air Vehicle choosen.\n");
                         vehicle = new Jet();
                         vehicle.Run();
                         break;
                     case Ability.Road:
-                        Console.Write("Road Vehicle chosen.\n");
+                        Console.Write("Road Vehicle choosen.\n");
                         vehicle = new Car();
                         vehicle.Run();
                         break;
                     case Ability.Water:
-                        Console.Write("Water Vehicle chosen.\n");
+                        Console.Write("Water Vehicle choosen.\n");
                         vehicle = new Boat();
                         vehicle.Run();                        
                         break;
@@ -35,7 +35,7 @@ namespace Chapter3.Challenge1
                 }
 
                 Console.WriteLine();
-                ability = ChoseVehicleAbility();
+                ability = ChooseVehicleAbility();
                 vehicleAbility = ConvertStringToEnumValue(ability);
             };
         }
@@ -45,7 +45,7 @@ namespace Chapter3.Challenge1
             return (Ability)Enum.Parse(typeof(Ability), ability);
         }
 
-        private string ChoseVehicleAbility()
+        private string ChooseVehicleAbility()
         {
             string abilityInText;
             Console.WriteLine("1. Air");
@@ -53,7 +53,7 @@ namespace Chapter3.Challenge1
             Console.WriteLine("3. Water");
             Console.WriteLine("4. None");
             Console.WriteLine("The abilities your vehicle can have are listed above.");
-            Console.Write("Chose by writing the number in front of the ability you would like: ");
+            Console.Write("Choose by writing the number in front of the ability you would like: ");
 
             int number = int.Parse(Console.ReadLine());
 
